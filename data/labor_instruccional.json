@@ -1,0 +1,92 @@
+{
+    "326151": {
+        "docente": "Alvaro_Jose_Torres_Penagos",
+        "ID": 326151,
+        "max_cursos": 3,
+        "max_horas": 14
+    },
+    "336392": {
+        "docente": "Andres_Felipe_Hernandez_Giraldo",
+        "ID": 336392,
+        "max_cursos": 4,
+        "max_horas": 14
+    },
+    "183645": {
+        "docente": "Andres_Felipe_Parra_Perea",
+        "ID": 183645,
+        "max_cursos": 5,
+        "max_horas": 20
+    },
+    "274691": {
+        "docente": "Beatriz_Elena_Hernandez_Arias",
+        "ID": 274691,
+        "max_cursos": 5,
+        "max_horas": 14
+    },
+    "259554": {
+        "docente": "Claudia_Orly_Escudero_Jimenez",
+        "ID": 259554,
+        "max_cursos": 4,
+        "max_horas": 14
+    },
+    "331121": {
+        "docente": "Edwin_Fernando_Restrepo_Salazar",
+        "ID": 331121,
+        "max_cursos": 3,
+        "max_horas": 14
+    },
+    "219830": {
+        "docente": "Edwin_Javier_Ortega_Zu\u00f1iga",
+        "ID": 219830,
+        "max_cursos": 5,
+        "max_horas": 14
+    },
+    "187061": {
+        "docente": "Jairo_Arboleda_Zu\u00f1iga",
+        "ID": 187061,
+        "max_cursos": 4,
+        "max_horas": 20
+    },
+    "277461": {
+        "docente": "Mariela_Galindo_Barbosa",
+        "ID": 277461,
+        "max_cursos": 4,
+        "max_horas": 20
+    },
+    "170520": {
+        "docente": "Pedro_Nel_Barbosa_Garcia",
+        "ID": 170520,
+        "max_cursos": 4,
+        "max_horas": 14
+    },
+    "226130": {
+        "docente": "Ruben_Dario_Parra_Zuleta",
+        "ID": 226130,
+        "max_cursos": 5,
+        "max_horas": 20
+    },
+    "182876": {
+        "docente": "William_Andres_Alzate_Cobo",
+        "ID": 182876,
+        "max_cursos": 2,
+        "max_horas": 10
+    },
+    "404903": {
+        "docente": "Yaqueline_Qui\u00f1ones_Rodriguez",
+        "ID": 404903,
+        "max_cursos": 3,
+        "max_horas": 14
+    },
+    "234541": {
+        "docente": "Marcelo_antonioni_Aguilar_Montero",
+        "ID": 234541,
+        "max_cursos": 1,
+        "max_horas": 8
+    },
+    "437130": {
+        "docente": "Jonny_Pantoja_Diaz",
+        "ID": 437130,
+        "max_cursos": 1,
+        "max_horas": 8
+    }
+}

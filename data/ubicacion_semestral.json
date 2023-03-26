@@ -1,0 +1,287 @@
+{
+    "2027-0059": {
+        "cursos": "Fundamentos_dibujo_CAD",
+        "codigo": "2027-0059",
+        "Semestre": 1
+    },
+    "8830-0001": {
+        "cursos": "Introducci\u00f3n_Ingenier\u00eda_Industrial",
+        "codigo": "8830-0001",
+        "Semestre": 1
+    },
+    "9937-0021": {
+        "cursos": "OCBD_Matematica_Operativa ",
+        "codigo": "9937-0021",
+        "Semestre": 1
+    },
+    "9937-0062": {
+        "cursos": "Calculo_Diferencial",
+        "codigo": "9937-0062",
+        "Semestre": 1
+    },
+    "9937-0063": {
+        "cursos": "Geometr\u00eda_Anal\u00edtica",
+        "codigo": "9937-0063",
+        "Semestre": 1
+    },
+    "6611-0004": {
+        "cursos": "Econom\u00eda",
+        "codigo": "6611-0004",
+        "Semestre": 2
+    },
+    "9937-0073": {
+        "cursos": "Calculo_Integral",
+        "codigo": "9937-0073",
+        "Semestre": 2
+    },
+    "9935-0031": {
+        "cursos": "F\u00edsica_Mec\u00e1nica",
+        "codigo": "9935-0031",
+        "Semestre": 2
+    },
+    "9937-0072": {
+        "cursos": "Algebra_Lineal",
+        "codigo": "9937-0072",
+        "Semestre": 2
+    },
+    "9939-0018": {
+        "cursos": "Fundamentos_Quimica",
+        "codigo": "9939-0018",
+        "Semestre": 2
+    },
+    "5559-0014": {
+        "cursos": "Legislaci\u00f3n",
+        "codigo": "5559-0014",
+        "Semestre": 3
+    },
+    "8831-0028": {
+        "cursos": "Materiales_Ingenier\u00eda",
+        "codigo": "8831-0028",
+        "Semestre": 3
+    },
+    "9937-0074": {
+        "cursos": "C\u00e1lculo_Vectorial",
+        "codigo": "9937-0074",
+        "Semestre": 3
+    },
+    "9935-0032": {
+        "cursos": "M\u00e9todos_Experimentales_F\u00edsica",
+        "codigo": "9935-0032",
+        "Semestre": 3
+    },
+    "9935-0033": {
+        "cursos": "Electricidad_Magnetismo",
+        "codigo": "9935-0033",
+        "Semestre": 3
+    },
+    "8830-0005": {
+        "cursos": "Organizaci\u00f3n_Trabajo    ",
+        "codigo": "8830-0005",
+        "Semestre": 4
+    },
+    "9937-0011": {
+        "cursos": "Probabilidad_Inferencia_Estadistica",
+        "codigo": "9937-0011",
+        "Semestre": 4
+    },
+    "8830-0004": {
+        "cursos": "Procesos_Industriales            ",
+        "codigo": "8830-0004",
+        "Semestre": 4
+    },
+    "9935-0012": {
+        "cursos": "Termodin\u00e1mica",
+        "codigo": "9935-0012",
+        "Semestre": 4
+    },
+    "6069-0014": {
+        "cursos": "Mercadeo",
+        "codigo": "6069-0014",
+        "Semestre": 4
+    },
+    "9937-0076": {
+        "cursos": "Ecuaciones_Diferenciales",
+        "codigo": "9937-0076",
+        "Semestre": 4
+    },
+    "5569-0011": {
+        "cursos": "ElectivaCFH-I_Catedra_sostenibilidad",
+        "codigo": "5569-0011",
+        "Semestre": 5
+    },
+    "8830-0010": {
+        "cursos": "Ergonom\u00eda_Seguridad_Salud_Trabajo                    ",
+        "codigo": "8830-0010",
+        "Semestre": 5
+    },
+    "9937-0012": {
+        "cursos": "Modelos_Regres\u00f3n_Series_Tiempo\n",
+        "codigo": "9937-0012",
+        "Semestre": 5
+    },
+    "6612-0001": {
+        "cursos": "Costos_Presupuestos",
+        "codigo": "6612-0001",
+        "Semestre": 5
+    },
+    "8828-0028": {
+        "cursos": "Electrotecnia_Industrial           ",
+        "codigo": "8828-0028",
+        "Semestre": 5
+    },
+    "8830-0008": {
+        "cursos": "Control_Estad\u00edsitico_Calidad                   ",
+        "codigo": "8830-0008",
+        "Semestre": 5
+    },
+    "8833-0021": {
+        "cursos": "Metodolog\u00eda_Investigaci\u00f3n",
+        "codigo": "8833-0021",
+        "Semestre": 5
+    },
+    "5562-0013": {
+        "cursos": "ElectivaCFH-II_Ciencia_Tecnologia_Cultura",
+        "codigo": "5562-0013",
+        "Semestre": 6
+    },
+    "8830-0006": {
+        "cursos": "Planeaci\u00f3n_Control_Producci\u00f3n",
+        "codigo": "8830-0006",
+        "Semestre": 6
+    },
+    "9937-0013": {
+        "cursos": "Dise\u00f1o_Experimental",
+        "codigo": "9937-0013",
+        "Semestre": 6
+    },
+    "6611-0088": {
+        "cursos": "Ingenier\u00eda_Econ\u00f3mica",
+        "codigo": "6611-0088",
+        "Semestre": 6
+    },
+    "6069-0011": {
+        "cursos": "Administraci\u00f3n_Gesti\u00f3n_Talento_Humano",
+        "codigo": "6069-0011",
+        "Semestre": 6
+    },
+    "8827-0008": {
+        "cursos": "Fundamentos_Computaci\u00f3n",
+        "codigo": "8827-0008",
+        "Semestre": 6
+    },
+    "8830-0007": {
+        "cursos": "Dise\u00f1o_Mantenimiento_Plantas          ",
+        "codigo": "8830-0007",
+        "Semestre": 7
+    },
+    "8830-0009": {
+        "cursos": "Optimizaci\u00f3n",
+        "codigo": "8830-0009",
+        "Semestre": 7
+    },
+    "6069-0018": {
+        "cursos": "Gesti\u00f3n_Financiera",
+        "codigo": "6069-0018",
+        "Semestre": 7
+    },
+    "6069-0127": {
+        "cursos": "Formulaci\u00f3n_Evaluaci\u00f3n_Proyectos\n",
+        "codigo": "6069-0127",
+        "Semestre": 7
+    },
+    "8830-0012": {
+        "cursos": "Sistemas_Gesti\u00f3n                    ",
+        "codigo": "8830-0012",
+        "Semestre": 7
+    },
+    "CEEM-0014": {
+        "cursos": "Electiva-I_RSE",
+        "codigo": "CEEM-0014",
+        "Semestre": 7
+    },
+    "5555-0010": {
+        "cursos": "\u00c9tica_Profesional",
+        "codigo": "5555-0010",
+        "Semestre": 8
+    },
+    "9937-0014": {
+        "cursos": "Investigaci\u00f3n_Operativa",
+        "codigo": "9937-0014",
+        "Semestre": 8
+    },
+    "8830-0011": {
+        "cursos": "Log\u00edstica_Industrial",
+        "codigo": "8830-0011",
+        "Semestre": 8
+    },
+    "8821-0010": {
+        "cursos": "Gerencia_Proyectos",
+        "codigo": "8821-0010",
+        "Semestre": 8
+    },
+    "8827-0120": {
+        "cursos": "Electiva-II_Excel_Ingeniero",
+        "codigo": "8827-0120",
+        "Semestre": 8
+    },
+    "6069-2060": {
+        "cursos": "OCI-I_Gerencia_contemporanea",
+        "codigo": "6069-2060",
+        "Semestre": 8
+    },
+    "5568-0011": {
+        "cursos": "ElectivaCFH-III_\u00c9tica_Social",
+        "codigo": "5568-0011",
+        "Semestre": 9
+    },
+    "9937-0018": {
+        "cursos": "Simulaci\u00f3n",
+        "codigo": "9937-0018",
+        "Semestre": 9
+    },
+    "6069-0012": {
+        "cursos": "Gesti\u00f3n_Tecnolog\u00eda_Innovaci\u00f3n",
+        "codigo": "6069-0012",
+        "Semestre": 9
+    },
+    "5566-0009": {
+        "cursos": "Contexto_Profesional",
+        "codigo": "5566-0009",
+        "Semestre": 9
+    },
+    "6069-0078": {
+        "cursos": "OCP-I_Gesti\u00f3n_Procesos ",
+        "codigo": "6069-0078",
+        "Semestre": 9
+    },
+    "6069-0154": {
+        "cursos": "OCI_II_Propspectiva_Estrategica",
+        "codigo": "6069-0154",
+        "Semestre": 9
+    },
+    "8821-0002": {
+        "cursos": "OCI-III_Htas_Toma_Desiciones",
+        "codigo": "8821-0002",
+        "Semestre": 9
+    },
+    "8833-0022": {
+        "cursos": "Pr\u00e1ctica_Profesional",
+        "codigo": "8833-0022",
+        "Semestre": 10
+    },
+    "8833-0083": {
+        "cursos": "Plan_Empresa",
+        "codigo": "8833-0083",
+        "Semestre": 10
+    },
+    "8833-0101": {
+        "cursos": "Trabajo_Grado",
+        "codigo": "8833-0101",
+        "Semestre": 10
+    },
+    "6069-0175": {
+        "cursos": "OCP-II_Audit.Admon_Diagnos_Organizacional",
+        "codigo": "6069-0175",
+        "Semestre": 10
+    }
+}

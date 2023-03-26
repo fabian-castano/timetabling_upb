@@ -1,0 +1,22 @@
+{
+    "1": {
+        "n_cursos": 1,
+        "max_horas": 20
+    },
+    "2": {
+        "n_cursos": 2,
+        "max_horas": 16
+    },
+    "3": {
+        "n_cursos": 3,
+        "max_horas": 12
+    },
+    "4": {
+        "n_cursos": 4,
+        "max_horas": 12
+    },
+    "5": {
+        "n_cursos": 5,
+        "max_horas": 12
+    }
+}

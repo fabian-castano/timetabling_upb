@@ -1,0 +1,344 @@
+{
+    "2027-0059": {
+        "nombre": "Fundamentos_dibujo_CAD",
+        "codigo": "2027-0059",
+        "n_grupos": 2,
+        "req_salon": 1.0
+    },
+    "8830-0001": {
+        "nombre": "Introducci\u00f3n_Ingenier\u00eda_Industrial",
+        "codigo": "8830-0001",
+        "n_grupos": 1,
+        "req_salon": 1.0
+    },
+    "9937-0021": {
+        "nombre": "OCBD_Matematica_Operativa ",
+        "codigo": "9937-0021",
+        "n_grupos": 1,
+        "req_salon": 1.0
+    },
+    "9937-0062": {
+        "nombre": "Calculo_Diferencial",
+        "codigo": "9937-0062",
+        "n_grupos": 2,
+        "req_salon": 1.0
+    },
+    "9937-0063": {
+        "nombre": "Geometr\u00eda_Anal\u00edtica",
+        "codigo": "9937-0063",
+        "n_grupos": 1,
+        "req_salon": 1.0
+    },
+    "6611-0004": {
+        "nombre": "Econom\u00eda",
+        "codigo": "6611-0004",
+        "n_grupos": 2,
+        "req_salon": 1.0
+    },
+    "9937-0073": {
+        "nombre": "Calculo_Integral",
+        "codigo": "9937-0073",
+        "n_grupos": 1,
+        "req_salon": 1.0
+    },
+    "9935-0031": {
+        "nombre": "F\u00edsica_Mec\u00e1nica",
+        "codigo": "9935-0031",
+        "n_grupos": 1,
+        "req_salon": 1.0
+    },
+    "9937-0072": {
+        "nombre": "Algebra_Lineal",
+        "codigo": "9937-0072",
+        "n_grupos": 1,
+        "req_salon": 1.0
+    },
+    "9939-0018": {
+        "nombre": "Fundamentos_Quimica",
+        "codigo": "9939-0018",
+        "n_grupos": 1,
+        "req_salon": 1.0
+    },
+    "5559-0014": {
+        "nombre": "Legislaci\u00f3n",
+        "codigo": "5559-0014",
+        "n_grupos": 1,
+        "req_salon": 1.0
+    },
+    "8831-0028": {
+        "nombre": "Materiales_Ingenier\u00eda",
+        "codigo": "8831-0028",
+        "n_grupos": 1,
+        "req_salon": 1.0
+    },
+    "9937-0074": {
+        "nombre": "C\u00e1lculo_Vectorial",
+        "codigo": "9937-0074",
+        "n_grupos": 1,
+        "req_salon": 1.0
+    },
+    "9935-0032": {
+        "nombre": "M\u00e9todos_Experimentales_F\u00edsica",
+        "codigo": "9935-0032",
+        "n_grupos": 1,
+        "req_salon": 1.0
+    },
+    "9935-0033": {
+        "nombre": "Electricidad_Magnetismo",
+        "codigo": "9935-0033",
+        "n_grupos": 1,
+        "req_salon": 1.0
+    },
+    "8830-0005": {
+        "nombre": "Organizaci\u00f3n_Trabajo    ",
+        "codigo": "8830-0005",
+        "n_grupos": 1,
+        "req_salon": 1.0
+    },
+    "9937-0011": {
+        "nombre": "Probabilidad_Inferencia_Estadistica",
+        "codigo": "9937-0011",
+        "n_grupos": 1,
+        "req_salon": 1.0
+    },
+    "8830-0004": {
+        "nombre": "Procesos_Industriales            ",
+        "codigo": "8830-0004",
+        "n_grupos": 1,
+        "req_salon": 1.0
+    },
+    "9935-0012": {
+        "nombre": "Termodin\u00e1mica",
+        "codigo": "9935-0012",
+        "n_grupos": 1,
+        "req_salon": 1.0
+    },
+    "6069-0014": {
+        "nombre": "Mercadeo",
+        "codigo": "6069-0014",
+        "n_grupos": 1,
+        "req_salon": 1.0
+    },
+    "9937-0076": {
+        "nombre": "Ecuaciones_Diferenciales",
+        "codigo": "9937-0076",
+        "n_grupos": 1,
+        "req_salon": 1.0
+    },
+    "5569-0011": {
+        "nombre": "ElectivaCFH-I_Catedra_sostenibilidad",
+        "codigo": "5569-0011",
+        "n_grupos": 3,
+        "req_salon": 1.0
+    },
+    "8830-0010": {
+        "nombre": "Ergonom\u00eda_Seguridad_Salud_Trabajo                    ",
+        "codigo": "8830-0010",
+        "n_grupos": 1,
+        "req_salon": 1.0
+    },
+    "9937-0012": {
+        "nombre": "Modelos_Regres\u00f3n_Series_Tiempo\n",
+        "codigo": "9937-0012",
+        "n_grupos": 1,
+        "req_salon": 1.0
+    },
+    "6612-0001": {
+        "nombre": "Costos_Presupuestos",
+        "codigo": "6612-0001",
+        "n_grupos": 1,
+        "req_salon": 1.0
+    },
+    "8828-0028": {
+        "nombre": "Electrotecnia_Industrial           ",
+        "codigo": "8828-0028",
+        "n_grupos": 1,
+        "req_salon": 1.0
+    },
+    "8830-0008": {
+        "nombre": "Control_Estad\u00edsitico_Calidad                   ",
+        "codigo": "8830-0008",
+        "n_grupos": 1,
+        "req_salon": 1.0
+    },
+    "8833-0021": {
+        "nombre": "Metodolog\u00eda_Investigaci\u00f3n",
+        "codigo": "8833-0021",
+        "n_grupos": 1,
+        "req_salon": 1.0
+    },
+    "5562-0013": {
+        "nombre": "ElectivaCFH-II_Ciencia_Tecnologia_Cultura",
+        "codigo": "5562-0013",
+        "n_grupos": 2,
+        "req_salon": 1.0
+    },
+    "8830-0006": {
+        "nombre": "Planeaci\u00f3n_Control_Producci\u00f3n",
+        "codigo": "8830-0006",
+        "n_grupos": 1,
+        "req_salon": 1.0
+    },
+    "9937-0013": {
+        "nombre": "Dise\u00f1o_Experimental",
+        "codigo": "9937-0013",
+        "n_grupos": 1,
+        "req_salon": 1.0
+    },
+    "6611-0088": {
+        "nombre": "Ingenier\u00eda_Econ\u00f3mica",
+        "codigo": "6611-0088",
+        "n_grupos": 1,
+        "req_salon": 1.0
+    },
+    "6069-0011": {
+        "nombre": "Administraci\u00f3n_Gesti\u00f3n_Talento_Humano",
+        "codigo": "6069-0011",
+        "n_grupos": 1,
+        "req_salon": 1.0
+    },
+    "8827-0008": {
+        "nombre": "Fundamentos_Computaci\u00f3n",
+        "codigo": "8827-0008",
+        "n_grupos": 1,
+        "req_salon": 1.0
+    },
+    "8830-0007": {
+        "nombre": "Dise\u00f1o_Mantenimiento_Plantas          ",
+        "codigo": "8830-0007",
+        "n_grupos": 1,
+        "req_salon": 1.0
+    },
+    "8830-0009": {
+        "nombre": "Optimizaci\u00f3n",
+        "codigo": "8830-0009",
+        "n_grupos": 1,
+        "req_salon": 1.0
+    },
+    "6069-0018": {
+        "nombre": "Gesti\u00f3n_Financiera",
+        "codigo": "6069-0018",
+        "n_grupos": 1,
+        "req_salon": 1.0
+    },
+    "6069-0127": {
+        "nombre": "Formulaci\u00f3n_Evaluaci\u00f3n_Proyectos\n",
+        "codigo": "6069-0127",
+        "n_grupos": 1,
+        "req_salon": 1.0
+    },
+    "8830-0012": {
+        "nombre": "Sistemas_Gesti\u00f3n                    ",
+        "codigo": "8830-0012",
+        "n_grupos": 1,
+        "req_salon": 1.0
+    },
+    "CEEM-0014": {
+        "nombre": "Electiva-I_RSE",
+        "codigo": "CEEM-0014",
+        "n_grupos": 1,
+        "req_salon": 1.0
+    },
+    "5555-0010": {
+        "nombre": "\u00c9tica_Profesional",
+        "codigo": "5555-0010",
+        "n_grupos": 1,
+        "req_salon": 1.0
+    },
+    "9937-0014": {
+        "nombre": "Investigaci\u00f3n_Operativa",
+        "codigo": "9937-0014",
+        "n_grupos": 1,
+        "req_salon": 1.0
+    },
+    "8830-0011": {
+        "nombre": "Log\u00edstica_Industrial",
+        "codigo": "8830-0011",
+        "n_grupos": 1,
+        "req_salon": 1.0
+    },
+    "8821-0010": {
+        "nombre": "Gerencia_Proyectos",
+        "codigo": "8821-0010",
+        "n_grupos": 1,
+        "req_salon": 1.0
+    },
+    "8827-0120": {
+        "nombre": "Electiva-II_Excel_Ingeniero",
+        "codigo": "8827-0120",
+        "n_grupos": 1,
+        "req_salon": 1.0
+    },
+    "6069-2060": {
+        "nombre": "OCI-I_Gerencia_contemporanea",
+        "codigo": "6069-2060",
+        "n_grupos": 1,
+        "req_salon": 1.0
+    },
+    "5568-0011": {
+        "nombre": "ElectivaCFH-III_\u00c9tica_Social",
+        "codigo": "5568-0011",
+        "n_grupos": 2,
+        "req_salon": 1.0
+    },
+    "9937-0018": {
+        "nombre": "Simulaci\u00f3n",
+        "codigo": "9937-0018",
+        "n_grupos": 1,
+        "req_salon": 1.0
+    },
+    "6069-0012": {
+        "nombre": "Gesti\u00f3n_Tecnolog\u00eda_Innovaci\u00f3n",
+        "codigo": "6069-0012",
+        "n_grupos": 1,
+        "req_salon": 1.0
+    },
+    "5566-0009": {
+        "nombre": "Contexto_Profesional",
+        "codigo": "5566-0009",
+        "n_grupos": 1,
+        "req_salon": 1.0
+    },
+    "6069-0078": {
+        "nombre": "OCP-I_Gesti\u00f3n_Procesos ",
+        "codigo": "6069-0078",
+        "n_grupos": 1,
+        "req_salon": 1.0
+    },
+    "6069-0154": {
+        "nombre": "OCI_II_Propspectiva_Estrategica",
+        "codigo": "6069-0154",
+        "n_grupos": 1,
+        "req_salon": 1.0
+    },
+    "8821-0002": {
+        "nombre": "OCI-III_Htas_Toma_Desiciones",
+        "codigo": "8821-0002",
+        "n_grupos": 1,
+        "req_salon": 1.0
+    },
+    "8833-0022": {
+        "nombre": "Pr\u00e1ctica_Profesional",
+        "codigo": "8833-0022",
+        "n_grupos": 1,
+        "req_salon": 1.0
+    },
+    "8833-0083": {
+        "nombre": "Plan_Empresa",
+        "codigo": "8833-0083",
+        "n_grupos": 1,
+        "req_salon": NaN
+    },
+    "8833-0101": {
+        "nombre": "Trabajo_Grado",
+        "codigo": "8833-0101",
+        "n_grupos": 1,
+        "req_salon": NaN
+    },
+    "6069-0175": {
+        "nombre": "OCP-II_Audit.Admon_Diagnos_Organizacional",
+        "codigo": "6069-0175",
+        "n_grupos": 1,
+        "req_salon": 1.0
+    }
+}
