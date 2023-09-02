@@ -105,7 +105,19 @@ for i in I:
         if (i,k) in prof_curso:
             plp.lpSum([x[(i,j)] for j in L[k] if (i,j) in tuplas])<=z[(i,k)]*len(L[k])
 
+# El tiempo total asignando a un docente no puede superar su disponibilidad según su labor instruccional
+for i in I:
+    if i in labor_instruccional.keys():
+        prob+=plp.lpSum([x[(i,j)]*horas_curso[curso_base[j]]["horas"] for j in J if (i,j) in tuplas and curso_base[j] not in cursos_excluir ])<=labor_instruccional[i]['max_horas']            
+
+# el tiempo total asignado a un curso no puede superar el maximo de horas reglamentarias
+for i in I:
+    if i in labor_instruccional.keys():
+        prob+=plp.lpSum([x[(i,j)]*horas_curso[curso_base[j]]["horas"] for j in J if (i,j) in tuplas and curso_base[j] not in cursos_excluir ])<=plp.lpSum([N[i,l]*horas_reglamento[str(l)]['max_horas'] for l in C])
+
 prob.solve()
+
+print("Status:", plp.LpStatus[prob.status])
 
 
 for (i,j) in tuplas:
