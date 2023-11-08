@@ -20,6 +20,16 @@ labor_instruccional=json.loads(open('data/labor_instruccional.json').read())
 grupo_requerimiento=json.loads(open('data/grupo_requerimiento.json').read())
 ubicacion_semestral=json.loads(open('data/ubicacion_semestral.json').read())
 
+# imprime los profesores que dictan cada curso
+profesores_curso_dict={}
+for i in idoneidad.keys():
+    for j in idoneidad[i]['idoneidad'].keys():
+        if j not in profesores_curso_dict.keys():
+            profesores_curso_dict[j]=[]
+        profesores_curso_dict[j].append(i)
+print(profesores_curso_dict)
+
+
 L={str(i):[str(grupo_requerimiento[i]['codigo'])+'-'+str(j) for j in range(grupo_requerimiento[i]['n_grupos'])] for i in grupo_requerimiento.keys()}
 curso_base={str(i)+"-"+str(j):str(i)  for i in grupo_requerimiento.keys() for j in range(grupo_requerimiento[i]['n_grupos']) }
 
@@ -36,7 +46,7 @@ I=set(idoneidad.keys()) # Profesores
 J=set(grupos) # Grupos
 K=set(grupo_requerimiento.keys()) # Cursos
 # Conjunto auxiliar que sirve para enumerar la cantidad de cursos que un docente tiene asignados
-C=set(range(1,7)) # Posibles valores para el número de clases en un semestre asignadas a un docente
+C=set(range(1,6)) # Posibles valores para el número de clases en un semestre asignadas a un docente
 
 # combinaciones posibles de profesores ygrupo
 tuplas=[(i,j) for i in I for j in J if i in idoneidad.keys() and curso_base[j] in idoneidad[i]['idoneidad'] ]
@@ -77,24 +87,17 @@ prob+=plp.lpSum([x[(i,j)]*idoneidad[i]['idoneidad'][curso_base[j]] for (i,j) in 
 """### Restricciones"""
 
 # restriccion 1
-cursos_excluir=['8833-0022','8833-0083','8833-0101','5568-0011','5562-0013']
+cursos_excluir=['8833-0022','8833-0083','8833-0101','5568-0011']
 # Cada curso tiene un docente asignado
 for j in J:
-
-    #
-
     if curso_base[j] not in cursos_excluir:
         prob+=plp.lpSum([x[i,j] for i in I if (i,j) in tuplas])==1,"asignacion curso %s"%j
-
-        prob.solve(solver=plp.PULP_CBC_CMD(msg=0))
-        if prob.status==-1:
-            print("El problema es infactible")
-            print(plp.lpSum([x[i,j] for i in I if (i,j) in tuplas])==1,"asignacion curso %s"%j)
-            break
 
 # Contar cuantos cursos diferentes da un profesor
 for i in I:
     prob+=plp.lpSum([z[(i,k)] for k in K if (i,k) in prof_curso])==plp.lpSum([l*N[i,l] for l in C])
+
+
 # el profesor tiene una cantidad de cursos asignada
 for i in I:
     prob+=plp.lpSum([N[i,l] for l in C])==1
@@ -103,26 +106,121 @@ for i in I:
 for i in I:
     for k in K:
         if (i,k) in prof_curso:
-            plp.lpSum([x[(i,j)] for j in L[k] if (i,j) in tuplas])<=z[(i,k)]*len(L[k])
+            z[(i,k)]<=plp.lpSum([x[(i,j)] for j in L[k] if (i,j) in tuplas])
+            for j in L[k]:
+                if (i,j) in tuplas:
+                    prob+=z[(i,k)]>=x[(i,j)]
+
+# N[i,l] contabiliza exactamente la cantidad de cursos asignados a un profesor
+from itertools import product
+for i in I:
+    # enumera combinaciones de profesor y cursos
+
+    prob+=plp.lpSum([N[i,l]*l for l in C])<=plp.lpSum([x[(i,j)] for j in J if (i,j) in tuplas])
+
+
 
 # El tiempo total asignando a un docente no puede superar su disponibilidad según su labor instruccional
 for i in I:
     if i in labor_instruccional.keys():
         prob+=plp.lpSum([x[(i,j)]*horas_curso[curso_base[j]]["horas"] for j in J if (i,j) in tuplas and curso_base[j] not in cursos_excluir ])<=labor_instruccional[i]['max_horas']            
 
+
+
+max_horas_segun_cursos={1:20
+                        ,2:16
+                        ,3:14
+                        ,4:12
+                        ,5:12
+                        ,6:12
+                        ,7:12}
+
+# la suma de las horas de los cursos asignados a un profesor no puede superar el maximo de horas segun el numero de cursos
+for i in I:
+    lhs=plp.lpSum([x[(i,j)]*horas_curso[curso_base[j]]["horas"] for j in J if (i,j) in tuplas and curso_base[j] not in cursos_excluir])
+    rhs=plp.lpSum([N[i,l]*max_horas_segun_cursos[l] for l in C])
+    if int(i)==274691:
+        print(lhs,"<=",rhs)
+    prob+=lhs<=rhs
+
 # el tiempo total asignado a un curso no puede superar el maximo de horas reglamentarias
 for i in I:
     if i in labor_instruccional.keys():
         prob+=plp.lpSum([x[(i,j)]*horas_curso[curso_base[j]]["horas"] for j in J if (i,j) in tuplas and curso_base[j] not in cursos_excluir ])<=plp.lpSum([N[i,l]*horas_reglamento[str(l)]['max_horas'] for l in C])
 
-prob.solve()
+# cada docente dicta al menos una clase
+for i in I:
+    prob+=plp.lpSum([x[(i,j)] for j in J if (i,j) in tuplas])>=0
+
+prob.solve(solver=plp.PULP_CBC_CMD(msg=1))
 
 print("Status:", plp.LpStatus[prob.status])
 
-
+model_output={'teachers':[],'courses':[],'ensembles':[]}
 for (i,j) in tuplas:
     if x[(i,j)].value()>0.5:
+        model_output['teachers'].append(i)
+        model_output['courses'].append(j)
+        model_output['ensembles'].append([i,j])
         try:
-            print(i,j,curso_base[j],labor_instruccional[i]['docente'],horas_curso[curso_base[j]]["ASIGNATURA"])
+            print(i,j,curso_base[j],labor_instruccional[i]['docente'],horas_curso[curso_base[j]]["ASIGNATURA"],horas_curso[curso_base[j]]["horas"])
         except:
             print(i,j,curso_base[j])
+
+# model_output to json
+with open('model_output_2.json', 'w') as fp:
+    json.dump(model_output, fp)
+
+
+# plots the distribution of the number of courses per teacher
+
+
+# plots the average hours per teacher
+import matplotlib.pyplot as plt
+import seaborn as sns
+import numpy as np
+sns.set_theme(style="whitegrid")
+sns.set(rc={'figure.figsize':(11.7,8.27)})
+sns.set(font_scale=1.5)
+sns.set_style("ticks")
+sum_hours={}
+count_grupos={}
+count_courses={}
+tuplas_cursos_horas={}
+for i in I:
+    sum_hours[i]=0
+    count_grupos[i]=0
+    count_courses[i]=0
+    tuplas_cursos_horas[i]=[]
+    for j in J:
+        if (i,j) in tuplas:
+            if x[(i,j)].value()>0.5:
+                sum_hours[i]+=(x[(i,j)].value()>0.5)*horas_curso[curso_base[j]]["horas"]
+                count_grupos[i]+=x[(i,j)].value()
+                tuplas_cursos_horas[i].append((j,(x[(i,j)].value()>0.5)*horas_curso[curso_base[j]]["horas"]))
+    
+    count_courses[i]+=sum([l*(N[i,l].value()>0.5) for l in C])
+
+
+sns.histplot(data=sum_hours, bins=20, kde=True)
+plt.xlabel("Número de horas")
+plt.ylabel("Número de profesores")
+plt.savefig('distribution_hours.png')
+
+
+df=pd.DataFrame.from_dict(sum_hours,orient='index',columns=['horas']).reset_index()
+df.columns
+df["cursos"]=df["index"].apply(lambda x: count_grupos[x])
+df["cursos_diferentes"]=df["index"].apply(lambda x: count_courses[x])
+#df["tuple_cursos_horas"]=df["index"].apply(lambda x: tuplas_cursos_horas[x])
+print(df.sort_values(by=['horas'],ascending=False))
+df.to_excel('resumen_profesores.xlsx')
+df.to_latex('resumen_profesores.tex')
+conteo_idoneidad={1:0,2:0,3:0}
+for i in I:
+    for j in J:
+        if (i,j) in tuplas and x[(i,j)].value()>0.5:
+            conteo_idoneidad[idoneidad[i]['idoneidad'][curso_base[j]]]+=1
+
+df=pd.DataFrame.from_dict(conteo_idoneidad,orient='index',columns=['conteo'])
+print(df)
